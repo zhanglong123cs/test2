@@ -1,5 +1,5 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.1.0/workbox-sw.js");
-var cacheStorageKey = 'minimal-pwa-1'
+var cacheStorageKey = 'minimal-pwa-2'
 var cacheList=[
   '/',
   'index.html',
@@ -24,6 +24,7 @@ self.addEventListener('fetch',function(e){
     })
   )
 })
+
 self.addEventListener('activate',function(e){
   e.waitUntil(
     //获取所有cache名称
